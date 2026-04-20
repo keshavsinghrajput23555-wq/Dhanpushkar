@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanpushkar – Homeopathy | Flour Mill | YouTube | Instagram</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --g1:#1b5e35;--g2:#2e7d52;--g3:#43a074;--g4:#7ec8a0;--g5:#d4f0e0;
+  --a1:#c05e00;--a2:#e07b00;--a3:#f9a030;--a4:#ffd08a;--a5:#fff3dc;
+  --cream:#fffdf5;--white:#ffffff;--text:#1e3028;--textm:#4a6358;--textl:#7a9e8e;
+  --border:rgba(30,80,50,0.12);--shadow:0 4px 24px rgba(30,80,50,0.10);--shadow-lg:0 12px 48px rgba(30,80,50,0.16);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:var(--g3);border-radius:3px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(255,253,245,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:0 6%;height:70px;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:900;color:var(--g1);text-decoration:none;}
+.logo em{color:var(--a2);font-style:normal}
+.nav-menu{display:flex;gap:1.8rem;list-style:none;align-items:center}
+.nav-menu a{text-decoration:none;color:var(--textm);font-weight:500;font-size:.9rem;transition:color .2s;}
+.nav-menu a:hover{color:var(--g1)}
+.nav-wa{background:linear-gradient(135deg,#25d366,#128c3e);color:var(--white)!important;padding:.5rem 1.3rem;border-radius:50px;font-weight:600;display:flex;align-items:center;gap:6px;box-shadow:0 3px 12px rgba(37,211,102,.35);transition:transform .2s!important;}
+.nav-wa:hover{transform:translateY(-1px)!important}
+
+.hero{min-height:100vh;padding:120px 6% 80px;background:linear-gradient(150deg,#f0faf4 0%,#e8f7ef 35%,#fff9ee 70%,#fffdf5 100%);display:flex;align-items:center;gap:4rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(249,160,48,.12) 0%,transparent 50%),radial-gradient(circle at 20% 80%,rgba(67,160,116,.10) 0%,transparent 50%);}
+.hero-left{position:relative;z-index:2;flex:1;max-width:600px}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--g5),#fff);border:1px solid rgba(67,160,116,.3);color:var(--g2);padding:6px 18px;border-radius:50px;font-size:.82rem;font-weight:700;margin-bottom:1.5rem;letter-spacing:.04em;text-transform:uppercase;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,5rem);font-weight:900;line-height:1.05;margin-bottom:1.2rem;color:var(--g1);}
+.hero h1 .gold{color:var(--a1);position:relative;display:inline-block;}
+.hero h1 .gold::after{content:'';position:absolute;left:0;bottom:-4px;right:0;height:3px;background:linear-gradient(90deg,var(--a2),var(--a4));border-radius:2px;}
+.hero-desc{color:var(--textm);font-size:1.05rem;line-height:1.8;margin-bottom:2rem;max-width:480px;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-green{background:linear-gradient(135deg,var(--g1),var(--g2));color:var(--white);padding:.9rem 2.2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.95rem;box-shadow:0 6px 20px rgba(27,94,53,.3);transition:all .25s;display:inline-flex;align-items:center;gap:8px;}
+.btn-green:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(27,94,53,.4)}
+.btn-amber{background:linear-gradient(135deg,var(--a2),var(--a3));color:var(--white);padding:.9rem 2.2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.95rem;box-shadow:0 6px 20px rgba(192,94,0,.3);transition:all .25s;display:inline-flex;align-items:center;gap:8px;}
+.btn-amber:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(192,94,0,.4)}
+.hero-stats{display:flex;gap:2rem;margin-top:2.5rem;flex-wrap:wrap;}
+.hstat{border-left:3px solid var(--g3);padding-left:1rem}
+.hstat strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:900;color:var(--g1);}
+.hstat span{font-size:.82rem;color:var(--textm);font-weight:500}
+.hero-right{position:relative;z-index:2;flex:0 0 360px;display:flex;flex-direction:column;gap:1rem;}
+.hero-card{background:var(--white);border-radius:20px;padding:1.4rem 1.6rem;border:1px solid var(--border);box-shadow:var(--shadow);display:flex;align-items:center;gap:1rem;transition:transform .3s;}
+.hero-card:hover{transform:translateX(-6px)}
+.hc-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.hc-icon i{font-size:1.5rem;}
+.hc-g{background:var(--g5)}.hc-a{background:var(--a5)}.hc-r{background:#fff0f0}.hc-b{background:#e8f4ff}
+.hc-r i{color:#ff0000;}
+.hc-b i{background:linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-card h4{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:2px}
+.hero-card p{font-size:.8rem;color:var(--textm)}
+
+section{padding:80px 6%}
+.sec-label{display:inline-block;background:var(--g5);color:var(--g2);padding:4px 16px;border-radius:50px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.8rem;}
+.sec-label.gold{background:var(--a5);color:var(--a1)}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--g1);margin-bottom:.6rem;line-height:1.1;}
+.sec-title .acc{color:var(--a1)}
+.sec-sub{color:var(--textm);font-size:1rem;line-height:1.7;max-width:560px;margin-bottom:3rem}
+
+.services{background:var(--white)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;}
+.srv-card{background:var(--cream);border-radius:24px;border:1px solid var(--border);overflow:hidden;transition:all .3s;}
+.srv-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.srv-top{padding:2rem 2rem 1.5rem;}
+.srv-emoji{font-size:3rem;display:block;margin-bottom:1rem}
+.srv-card h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:900;color:var(--g1);margin-bottom:.7rem;}
+.srv-card.amber-srv h3{color:var(--a1)}
+.srv-card p{color:var(--textm);font-size:.92rem;line-height:1.7;margin-bottom:1rem}
+.srv-features{list-style:none;margin-bottom:1.2rem}
+.srv-features li{display:flex;align-items:flex-start;gap:8px;padding:5px 0;color:var(--text);font-size:.88rem;border-bottom:1px solid var(--border);}
+.srv-features li:last-child{border:none}
+.chk{color:var(--g2);font-weight:700;font-size:1rem;margin-top:1px;flex-shrink:0}
+.chk-a{color:var(--a2)}
+.srv-badge{display:inline-block;padding:4px 14px;border-radius:50px;font-size:.78rem;font-weight:700;}
+.badge-g{background:var(--g5);color:var(--g2)}.badge-a{background:var(--a5);color:var(--a1)}
+.srv-bottom{background:linear-gradient(135deg,var(--g5),rgba(255,255,255,0));padding:1rem 2rem;border-top:1px solid var(--border);}
+.srv-bottom.amber-bg{background:linear-gradient(135deg,var(--a5),rgba(255,255,255,0))}
+
+.youtube-sec{background:linear-gradient(150deg,#f5fff9,var(--cream))}
+.yt-banner{border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:3rem;border:2px solid var(--border);background:linear-gradient(135deg,#0f0f0f 0%,#1a1a2e 50%,#16213e 100%);padding:3.5rem 2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;}
+.yt-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(255,0,0,0.15) 0%,transparent 65%);}
+.yt-banner-icon{width:90px;height:90px;background:#ff0000;border-radius:22px;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;position:relative;box-shadow:0 8px 32px rgba(255,0,0,0.5);}
+.yt-banner-icon i{font-size:2.8rem;color:white;}
+.yt-banner h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:900;color:white;margin-bottom:.5rem;position:relative;}
+.yt-banner p{color:rgba(255,255,255,0.7);font-size:.95rem;margin-bottom:2rem;position:relative;max-width:500px;}
+.yt-banner-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;position:relative;}
+.yt-visit-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#ff0000,#cc0000);color:white;padding:.9rem 2.2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.95rem;box-shadow:0 6px 20px rgba(255,0,0,.4);transition:all .25s;}
+.yt-visit-btn:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(255,0,0,.55)}
+.yt-visit-btn-sec{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.12);color:white;border:2px solid rgba(255,255,255,0.3);padding:.9rem 2.2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.95rem;transition:all .25s;}
+.yt-visit-btn-sec:hover{background:rgba(255,255,255,0.2);transform:translateY(-3px)}
+.yt-channels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;}
+.yt-ch-card{background:var(--white);border-radius:20px;padding:1.8rem;border:1px solid var(--border);box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:flex-start;transition:all .3s;}
+.yt-ch-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.yt-avatar{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.4rem;font-weight:900;margin-bottom:1rem;flex-shrink:0;}
+.yt-ch-card h4{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
+.yt-ch-card p{font-size:.82rem;color:var(--textm);margin-bottom:1.2rem;flex:1;line-height:1.6}
+.yt-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#ff0000,#cc0000);color:white;padding:.65rem 1.4rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.85rem;transition:all .2s;width:100%;justify-content:center;box-shadow:0 3px 12px rgba(255,0,0,.25);}
+.yt-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,0,0,.35)}
+.yt-btn i{font-size:1rem;}
+
+.instagram-sec{background:var(--white)}
+.insta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;}
+.insta-card{border-radius:24px;padding:2.5rem;background:linear-gradient(145deg,#833ab4 0%,#fd1d1d 50%,#fcb045 100%);color:white;display:flex;flex-direction:column;align-items:flex-start;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(131,58,180,.3);transition:all .3s;}
+.insta-card::before{content:'';position:absolute;top:-40%;right:-20%;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.08);}
+.insta-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(131,58,180,.4)}
+.insta-icon{font-size:2.8rem;margin-bottom:1rem;position:relative;display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:rgba(255,255,255,0.2);border-radius:16px;}
+.insta-icon i{font-size:2rem;color:white;}
+.insta-card h3{font-size:1.4rem;font-weight:700;margin-bottom:.4rem}
+.insta-handle{font-size:1rem;opacity:.85;margin-bottom:1.2rem;font-weight:600;}
+.insta-card p{opacity:.85;font-size:.9rem;line-height:1.7;margin-bottom:1.8rem;flex:1}
+.insta-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.25);color:white;border:2px solid rgba(255,255,255,.5);padding:.75rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:.9rem;transition:all .2s;width:100%;justify-content:center;}
+.insta-btn:hover{background:rgba(255,255,255,.4);transform:scale(1.02)}
+.insta-btn i{font-size:1rem;}
+
+.about-sec{background:linear-gradient(150deg,var(--g5),var(--cream))}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.about-vis{display:flex;flex-direction:column;gap:1.2rem}
+.about-stat{background:var(--white);border-radius:18px;padding:1.5rem 1.8rem;border:1px solid var(--border);box-shadow:var(--shadow);display:flex;align-items:center;gap:1.2rem;}
+.as-icon{width:50px;height:50px;border-radius:14px;background:var(--g5);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;}
+.as-icon.gold{background:var(--a5)}
+.as-num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:900;color:var(--g1);line-height:1;}
+.as-lbl{font-size:.82rem;color:var(--textm);margin-top:2px}
+.feat-list{list-style:none}
+.feat-list li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:.92rem;color:var(--text);}
+.feat-list li:last-child{border:none}
+.feat-list li::before{content:'✓';background:var(--g5);color:var(--g2);width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:900;flex-shrink:0;}
+
+.contact-sec{background:linear-gradient(150deg,#e8f7ef,#fff9ee,var(--cream));}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-bottom:3rem;}
+.c-card{background:var(--white);border-radius:20px;padding:1.8rem;border:1px solid var(--border);box-shadow:var(--shadow);text-align:center;transition:transform .3s;}
+.c-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.c-icon{font-size:2.2rem;width:60px;height:60px;border-radius:50%;background:var(--g5);display:flex;align-items:center;justify-content:center;margin:0 auto .8rem;font-size:1.6rem;}
+.c-icon.gold{background:var(--a5)}.c-icon.wa{background:#e8fff0}
+.c-label{font-size:.78rem;color:var(--textl);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem}
+.c-val{font-size:.95rem;color:var(--text);font-weight:600;line-height:1.5}
+.cta-row{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.wa-cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#25d366,#128c3e);color:white;padding:1.1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.05rem;box-shadow:0 6px 24px rgba(37,211,102,.35);transition:all .25s;}
+.wa-cta:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.45)}
+.call-cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--g1),var(--g2));color:white;padding:1.1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.05rem;box-shadow:0 6px 24px rgba(27,94,53,.3);transition:all .25s;}
+.call-cta:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(27,94,53,.4)}
+
+.float-wa{position:fixed;bottom:28px;right:28px;z-index:1000;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#25d366,#128c3e);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.5);text-decoration:none;font-size:1.8rem;transition:all .25s;animation:pulse 2.5s infinite;}
+.float-wa:hover{transform:scale(1.12);box-shadow:0 10px 36px rgba(37,211,102,.6)}
+@keyframes pulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,.4)}50%{box-shadow:0 6px 24px rgba(37,211,102,.5),0 0 0 14px rgba(37,211,102,.0)}}
+
+footer{background:linear-gradient(135deg,var(--g1),var(--g2));color:rgba(255,255,255,.8);text-align:center;padding:2.5rem 6%;}
+footer .f-logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:900;color:var(--white);margin-bottom:.5rem;}
+footer .f-logo em{color:var(--a4);font-style:normal}
+footer p{font-size:.88rem;line-height:1.9}
+footer a{color:var(--g4);text-decoration:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-pill{animation:fadeUp .6s .1s both}.hero h1{animation:fadeUp .7s .2s both}.hero-desc{animation:fadeUp .7s .35s both}.hero-btns{animation:fadeUp .7s .48s both}.hero-stats{animation:fadeUp .7s .6s both}.hero-right{animation:fadeUp .8s .3s both}
+
+@media(max-width:900px){.hero{flex-direction:column;gap:3rem}.hero-right{width:100%;flex:none}.about-inner{grid-template-columns:1fr}.nav-menu{display:none}}
+@media(max-width:500px){.hero h1{font-size:2.4rem}section{padding:60px 5%}}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919931515139" target="_blank" class="float-wa" title="Chat on WhatsApp">💬</a>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="logo">Dhan<em>pushkar</em></a>
+  <ul class="nav-menu">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#youtube">YouTube</a></li>
+    <li><a href="#instagram">Instagram</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="https://wa.me/919931515139" target="_blank" class="nav-wa">💬 WhatsApp Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-pill">🌿 Muzaffarpur, Bihar</div>
+    <h1>Nature's<br><span class="gold">Pure Power</span></h1>
+    <p class="hero-desc">From homeopathic medicines to fresh flour — we take complete care of our community's health and needs. 100% genuine products, trusted service.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-green">🌿 Our Services</a>
+      <a href="https://wa.me/919931515139" target="_blank" class="btn-amber">💬 Contact Us Now</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><strong>100%</strong><span>Pure Products</span></div>
+      <div class="hstat"><strong>4+</strong><span>YouTube Channels</span></div>
+      <div class="hstat"><strong>2</strong><span>Instagram Pages</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hc-icon hc-g">🌿</div>
+      <div><h4>Homeopathic Medicine Shop</h4><p>Genuine medicine for every illness — 100% cure guaranteed</p></div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-icon hc-a">🌾</div>
+      <div><h4>Flour Mill (Atta Chakki)</h4><p>Completely fresh and pure flour — no adulteration</p></div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-icon hc-r"><i class="fab fa-youtube"></i></div>
+      <div><h4>4 YouTube Channels</h4><p>Tech, Finance, Lifestyle — subscribe now!</p></div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-icon hc-b"><i class="fab fa-instagram"></i></div>
+      <div><h4>2 Instagram Pages</h4><p>@dhanpushkar &amp; @dhanpushkar9</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div style="max-width:1150px;margin:0 auto">
+    <span class="sec-label">Our Business</span>
+    <h2 class="sec-title">What Do <span class="acc">We Offer?</span></h2>
+    <p class="sec-sub">From nature's blessings — whether medicine or flour, we provide only pure and genuine products.</p>
+    <div class="services-grid">
+
+      <div class="srv-card">
+        <div class="srv-top">
+          <span class="srv-emoji">🌿</span>
+          <h3>Homeopathic Medicine Shop</h3>
+          <p>We offer 100% genuine homeopathic medicines for all types of illnesses. Whether it's fever, diabetes, blood pressure or any other disease — get completely cured with natural medicine. No side effects, treatment from the root!</p>
+          <ul class="srv-features">
+            <li><span class="chk">✓</span> Fever, Cough &amp; Cold medicine</li>
+            <li><span class="chk">✓</span> Diabetes (Sugar) treatment</li>
+            <li><span class="chk">✓</span> Blood Pressure medicine</li>
+            <li><span class="chk">✓</span> Skin Problems treatment</li>
+            <li><span class="chk">✓</span> All children's illnesses</li>
+            <li><span class="chk">✓</span> Stomach ailments medicine</li>
+            <li><span class="chk">✓</span> Bone &amp; Joint pain relief</li>
+            <li><span class="chk">✓</span> 100% Cure Guarantee</li>
+          </ul>
+          <span class="srv-badge badge-g">🌿 100% Natural Cure</span>
+        </div>
+        <div class="srv-bottom">
+          <a href="https://wa.me/919931515139?text=I%20need%20homeopathic%20medicine" target="_blank" class="btn-green" style="display:inline-flex;width:100%;justify-content:center;">💊 Ask About Medicine</a>
+        </div>
+      </div>
+
+      <div class="srv-card amber-srv">
+        <div class="srv-top">
+          <span class="srv-emoji">🌾</span>
+          <h3>Flour Mill — Atta Chakki</h3>
+          <p>Flour ground at our mill is completely fresh, pure and fragrant. Bring your own wheat, maize or millet and take home flour with the aroma of a home grinder. No adulteration, no chemicals — just nature's freshness!</p>
+          <ul class="srv-features">
+            <li><span class="chk chk-a">✓</span> Wheat Flour — freshly ground</li>
+            <li><span class="chk chk-a">✓</span> Maize Flour (Corn Flour)</li>
+            <li><span class="chk chk-a">✓</span> Millet &amp; Sorghum Flour</li>
+            <li><span class="chk chk-a">✓</span> Gram Flour (Besan)</li>
+            <li><span class="chk chk-a">✓</span> Zero Adulteration Guarantee</li>
+            <li><span class="chk chk-a">✓</span> You can get your own wheat ground</li>
+            <li><span class="chk chk-a">✓</span> Affordable &amp; available in bulk</li>
+            <li><span class="chk chk-a">✓</span> Home delivery also available</li>
+          </ul>
+          <span class="srv-badge badge-a">🌾 100% Fresh &amp; Pure</span>
+        </div>
+        <div class="srv-bottom amber-bg">
+          <a href="https://wa.me/919931515139?text=I%20need%20information%20about%20the%20flour%20mill" target="_blank" class="btn-amber" style="display:inline-flex;width:100%;justify-content:center;">🌾 Order Flour Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- YOUTUBE -->
+<section class="youtube-sec" id="youtube">
+  <div style="max-width:1150px;margin:0 auto">
+    <span class="sec-label">YouTube Channels</span>
+    <h2 class="sec-title">Our <span class="acc">YouTube</span> Channels</h2>
+    <p class="sec-sub">Learn about Technology, Finance, Lifestyle and much more on 4 different channels. Subscribe and hit the notification bell!</p>
+
+    <div class="yt-banner">
+      <div class="yt-banner-icon"><i class="fab fa-youtube"></i></div>
+      <h3>Watch Our YouTube Channels</h3>
+      <p>We have 4 channels covering Technology, Finance, Lifestyle & Personal Development. Click below to visit and subscribe!</p>
+      <div class="yt-banner-btns">
+        <a href="https://www.youtube.com/@DhanpushkarFinance" target="_blank" class="yt-visit-btn"><i class="fab fa-youtube"></i> Dhanpushkar Finance</a>
+        <a href="https://www.youtube.com/@TurboTechAI-1" target="_blank" class="yt-visit-btn-sec"><i class="fab fa-youtube"></i> Turbo Tech AI</a>
+      </div>
+    </div>
+
+    <div class="yt-channels-grid">
+      <div class="yt-ch-card">
+        <div class="yt-avatar" style="background:linear-gradient(135deg,#1565c0,#0d47a1)">🤖</div>
+        <h4>Turbo Tech AI</h4>
+        <p>Latest updates and information about Technology, AI and the Digital world.</p>
+        <a href="https://www.youtube.com/@TurboTechAI-1" target="_blank" class="yt-btn"><i class="fab fa-youtube"></i> Subscribe</a>
+      </div>
+      <div class="yt-ch-card">
+        <div class="yt-avatar" style="background:linear-gradient(135deg,#e65100,#bf360c)">💰</div>
+        <h4>Dhanpushkar Finance</h4>
+        <p>Learn the secrets of saving money, investing and achieving financial freedom.</p>
+        <a href="https://www.youtube.com/@DhanpushkarFinance" target="_blank" class="yt-btn"><i class="fab fa-youtube"></i> Subscribe</a>
+      </div>
+      <div class="yt-ch-card">
+        <div class="yt-avatar" style="background:linear-gradient(135deg,#6a1b9a,#4a148c)">👑</div>
+        <h4>Mr. Reyansh Raj Aryani</h4>
+        <p>The best Lifestyle, motivation and personal development content every week.</p>
+        <a href="https://www.youtube.com/@Mr.ReyanshRajAryani" target="_blank" class="yt-btn"><i class="fab fa-youtube"></i> Subscribe</a>
+      </div>
+      <div class="yt-ch-card">
+        <div class="yt-avatar" style="background:linear-gradient(135deg,#2e7d52,#1b5e35)">🌟</div>
+        <h4>Yashvardhanani</h4>
+        <p>Stay connected with valuable life lessons and unique tips for success.</p>
+        <a href="https://www.youtube.com/@RahulAryani" target="_blank" class="yt-btn"><i class="fab fa-youtube"></i> Subscribe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="instagram-sec" id="instagram">
+  <div style="max-width:1150px;margin:0 auto">
+    <span class="sec-label gold">Instagram Pages</span>
+    <h2 class="sec-title">Our <span class="acc">Instagram</span> Pages</h2>
+    <p class="sec-sub">Products, daily updates, health tips and the beauty of life — all in one place. Follow us and become part of our community!</p>
+    <div class="insta-grid">
+      <div class="insta-card">
+        <div class="insta-icon"><i class="fab fa-instagram"></i></div>
+        <h3>Dhanpushkar</h3>
+        <div class="insta-handle">@dhanpushkar</div>
+        <p>Homeopathic products, health tips, daily life updates and much more. Stay connected with us daily and get your friends to follow too!</p>
+        <a href="https://instagram.com/dhanpushkar" target="_blank" class="insta-btn"><i class="fab fa-instagram"></i> Follow @dhanpushkar</a>
+      </div>
+      <div class="insta-card">
+        <div class="insta-icon"><i class="fab fa-instagram"></i></div>
+        <h3>Dhanpushkar 9</h3>
+        <div class="insta-handle">@dhanpushkar9</div>
+        <p>Latest updates, reels and exclusive content only on our second Instagram page. Follow now and don't miss anything!</p>
+        <a href="https://instagram.com/dhanpushkar9" target="_blank" class="insta-btn"><i class="fab fa-instagram"></i> Follow @dhanpushkar9</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-sec" id="about">
+  <div style="max-width:1150px;margin:0 auto">
+    <div class="about-inner">
+      <div class="about-vis">
+        <div class="about-stat">
+          <div class="as-icon">🌿</div>
+          <div><div class="as-num">10+ Years</div><div class="as-lbl">Experience in homeopathic medicine</div></div>
+        </div>
+        <div class="about-stat">
+          <div class="as-icon gold">🌾</div>
+          <div><div class="as-num">100%</div><div class="as-lbl">Pure flour — zero adulteration</div></div>
+        </div>
+        <div class="about-stat">
+          <div class="as-icon">📺</div>
+          <div><div class="as-num">4 Channels</div><div class="as-lbl">Different topics on YouTube</div></div>
+        </div>
+        <div class="about-stat">
+          <div class="as-icon gold">📍</div>
+          <div><div class="as-num">Muzaffarpur</div><div class="as-lbl">Located in Bihar, well known across the region</div></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="sec-label">About Us</span>
+        <h2 class="sec-title">Trust &amp; <span class="acc">Service</span> Is Our Identity</h2>
+        <p class="sec-sub">We are from Kalyani urf Bisanpur Kalyan, Muzaffarpur and serving our community is our greatest goal.</p>
+        <ul class="feat-list">
+          <li>100% genuine homeopathic medicine available for every illness</li>
+          <li>Zero adulteration, 100% fresh and pure flour</li>
+          <li>Completely free information on 4 YouTube channels</li>
+          <li>Service at the most affordable and best prices</li>
+          <li>You can contact us directly on WhatsApp</li>
+          <li>Home delivery is also available</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div style="max-width:1150px;margin:0 auto;text-align:center">
+    <span class="sec-label">Contact Us</span>
+    <h2 class="sec-title">We Are <span class="acc">Here For You</span></h2>
+    <p class="sec-sub" style="margin:0 auto 3rem">Any question, order or advice — talk to us directly. You'll get an instant reply on WhatsApp!</p>
+    <div class="contact-grid">
+      <div class="c-card">
+        <div class="c-icon">📍</div>
+        <div class="c-label">Address</div>
+        <div class="c-val">Vill - Kalyani urf Bisanpur Kalyan,<br>P.O - Harkhauli, P.S - Benibad,<br><strong>Dist - Muzaffarpur, Bihar</strong></div>
+      </div>
+      <div class="c-card">
+        <div class="c-icon wa">📞</div>
+        <div class="c-label">Phone / WhatsApp</div>
+        <div class="c-val"><a href="tel:+919931515139" style="color:var(--g1);text-decoration:none;font-size:1.15rem;font-weight:700">+91 99315 15139</a></div>
+      </div>
+      <div class="c-card">
+        <div class="c-icon gold">🕐</div>
+        <div class="c-label">Opening Hours</div>
+        <div class="c-val">8:00 AM –<br>9:00 PM<br><strong>Open Every Day</strong></div>
+      </div>
+      <div class="c-card">
+        <div class="c-icon">📱</div>
+        <div class="c-label">Social Media</div>
+        <div class="c-val">YouTube: 4 Channels<br>Instagram: @dhanpushkar<br>&amp; @dhanpushkar9</div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a href="https://wa.me/919931515139?text=Hello!%20I%20saw%20your%20website,%20I%20would%20like%20to%20talk." target="_blank" class="wa-cta">💬 Chat on WhatsApp</a>
+      <a href="tel:+919931515139" class="call-cta">📞 Call Us Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">Dhan<em>pushkar</em></div>
+  <p>
+    Kalyani urf Bisanpur Kalyan, Harkhauli, Benibad, Muzaffarpur, Bihar<br>
+    📞 <a href="tel:+919931515139">+91 99315 15139</a> &nbsp;|&nbsp;
+    💬 <a href="https://wa.me/919931515139">WhatsApp</a> &nbsp;|&nbsp;
+    📸 <a href="https://instagram.com/dhanpushkar">@dhanpushkar</a> &nbsp;|&nbsp;
+    📸 <a href="https://instagram.com/dhanpushkar9">@dhanpushkar9</a><br><br>
+    © 2026 Dhanpushkar — All Rights Reserved ❤️ Muzaffarpur, Bihar
+  </p>
+</footer>
+
+</body>
+</html>
